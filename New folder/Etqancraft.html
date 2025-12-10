@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etqan Craft - Handmade Macrame & Decor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="login-modal-overlay" id="login-modal-overlay">
+    <div class="login-modal-content">
+        <button class="close-modal-btn" id="close-login-btn">&times;</button>
+        <h3>تسجيل الدخول أو إنشاء حساب</h3>
+        <p>الرجاء تسجيل الدخول أو إدخال بريدك الإلكتروني لإنهاء طلبك وتتبع مشترياتك.</p>
+        
+        <form id="login-form">
+            <label for="user-email">البريد الإلكتروني:</label>
+            <input type="email" id="user-email" required placeholder="example@domain.com">
+            
+            <label for="user-password">كلمة المرور:</label>
+            <input type="password" id="user-password" placeholder="للدخول السريع لاحقاً">
+            
+            <button type="submit" class="btn primary-btn" id="continue-btn">تسجيل الدخول / استمرار</button>
+        </form>
+        
+        <p class="modal-info">بالنقر على "استمرار"، أنت توافق على شروط الخدمة.</p>
+    </div>
+</div>
+
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#home" class="logo-link">
+                <img src="logo.png" alt="Etqan Craft Logo" class="logo-img">
+                <span class="logo-text">Etqan Craft</span> 
+            </a>
+            <nav class="main-nav">
+                <a href="#home">Home</a>
+                <a href="#shop">Shop</a>
+                <a href="#bestsellers">Bestsellers</a>
+                <a href="#story">Our Story</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="cart-icon">
+                🛒 (0)
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section" id="home">
+            <div class="hero-content">
+                <p class="subtitle">Artistry in Every Knot</p>
+                <h2>Handmade Macrame & Crochet</h2>
+                <p>Discover unique, carefully crafted pieces designed to bring warmth and elegance to your space.</p>
+                <a href="#shop" class="btn primary-btn">Explore The Collection</a>
+            </div>
+        </section>
+
+        <section class="shop-section" id="shop">
+            <h3>Shop By Category</h3>
+            <div class="categories-grid">
+                
+                <div class="category-card">
+                    <img src="mirror-category.jpg" alt="Macrame Mirrors" class="category-img">
+                    <h4>Macrame Mirrors</h4>
+                </div>
+                
+                <div class="category-card">
+                    <img src="wall-category.jpg" alt="Wall Hangings" class="category-img">
+                    <h4>Wall Hangings</h4>
+                </div>
+                
+                <div class="category-card">
+                    <img src="accessories-category.jpg" alt="Home Accessories" class="category-img">
+                    <h4>Crochet Bags</h4>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="products-section" id="bestsellers">
+            <h3>Our Bestsellers</h3>
+            <button class="btn secondary-btn view-all-btn" id="view-all-products">View All Products</button>
+            
+            <div class="products-grid">
+                
+                <div class="product-card category-mirrors" data-id="p1"> 
+                    <img src="macrame-mirror.jpeg" alt="Boho Macrame Mirror with Heart Leaves" class="product-img"> 
+                    <div class="product-info">
+                        <h4>Bohemian Sunset Mirror</h4>
+                        <p class="price">
+                            <span class="original-price">EGP920.00</span> 
+                            <span class="sale-price">EGP745.00</span> 
+                        </p> 
+                        <a href="#" class="btn secondary-btn">Add to Cart</a> 
+                    </div>
+                </div>
+                
+                <div class="product-card category-mirrors" data-id="p2"> 
+                    <img src="macrame-mirror-2.jpeg" alt="Minimalist Round Macrame Mirror" class="product-img">
+                    <div class="product-info">
+                        <h4>Minimalist Harmony Mirror V1</h4>
+                        <p class="price">EGP799.00</p>
+                        <a href="#" class="btn secondary-btn">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="product-card category-mirrors" data-id="p3">
+                    <img src="macrame-mirror-3.jpeg" alt="Minimalist Round Macrame Mirror" class="product-img">
+                    <div class="product-info">
+                        <h4>Minimalist Harmony Mirror V2</h4>
+                        <p class="price">EGP675.00</p>
+                        <a href="#" class="btn secondary-btn">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="product-card category-mirrors" data-id="p4">
+                    <img src="macrame-mirror-4.jpeg" alt="Minimalist Round Macrame Mirror" class="product-img">
+                    <div class="product-info">
+                        <h4>Minimalist Harmony Mirror V3</h4>
+                        <p class="price">EGP765.00</p>
+                        <a href="#" class="btn secondary-btn">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="product-card category-hangings" data-id="p5">
+                    <img src="wall-hanging-1.jpg" alt="Large Macrame Wall Hanging" class="product-img">
+                    <div class="product-info">
+                        <h4>The Desert Dreamer</h4>
+                        <p class="price">EGP449.00</p>
+                        <a href="#" class="btn secondary-btn">Add to Cart</a>
+                    </div>
+                </div>
+                
+                <div class="product-card category-hangings" data-id="p6">
+                    <img src="plant-hanger-1.jpg" alt="Triple Tier Macrame Plant Hanger" class="product-img">
+                    <div class="product-info">
+                        <h4>Tiered Plant Hanger</h4>
+                        <p class="price">EGP499.00</p>
+                        <a href="#" class="btn secondary-btn">Add to Cart</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="story-section" id="story">
+            <div class="story-content">
+                <h3>The Etqan Craft Story</h3>
+                <p>Etqan, meaning "Mastery" or "Perfection," is the core of everything we create. We pour passion and meticulous attention into every knot, ensuring that you receive a piece of art that truly reflects quality and dedication. Our materials are sourced ethically, focusing on sustainable cotton and natural wood.</p>
+                <a href="#about-us" class="btn text-btn">Learn More About Us</a>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <h2>Get In Touch With Etqan Craft</h2>
+            <p class="subtitle">We would love to hear from you!</p>
+            
+            <div class="contact-details">
+                <div class="contact-item">
+                    <h3>📧 Email Us</h3>
+                    <p>For inquiries and custom orders:</p>
+                    <p class="detail-value">contact@etqancraft.com</p>
+                </div>
+                <div class="contact-item">
+                    <h3>📱 WhatsApp</h3>
+                    <p>Quick replies:</p>
+                    <p class="detail-value">+20 100 123 4567</p>
+                </div>
+            </div>
+
+            <p style="margin-top: 30px;">Follow us on social media for new designs and offers!</p>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <h5>Customer Care</h5>
+                <ul>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h5>Get In Touch</h5>
+                <p>Email: contact@etqancraft.com</p>
+                <p>Follow us on social media!</p>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 Etqan Craft. All Rights Reserved.</p>
+    </footer>
+
+    <div class="cart-overlay" id="cart-overlay">
+        <div class="cart-sidebar">
+            <div class="cart-header">
+                <h3>🛒 سلة مشترياتك</h3>
+                <button class="close-btn" id="close-cart-btn">&times;</button>
+            </div>
+            <div class="cart-items-container" id="cart-items-container">
+                <p class="empty-cart-message">سلة التسوق فارغة.</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>الإجمالي:</span>
+                    <span id="cart-total-amount">EGP0.00</span>
+                </div>
+                <a href="#" class="btn primary-btn checkout-btn">إتمام عملية الشراء</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
